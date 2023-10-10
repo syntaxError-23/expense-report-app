@@ -1,0 +1,150 @@
+html{
+    background-color: #f3faf0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    width: 95%;
+    margin: 20px auto;
+    background-color: #d7e6d1;
+    padding-top: 10px;
+    border-radius: 4px
+}
+
+body > *{
+    margin: 0 auto;
+}
+
+h1, h4{
+    text-align: center;
+    margin: 5px auto;
+}
+/* -- TABLE STYLES-- */
+table{
+    border: 2px solid rgba(179, 179, 179, 0.5);
+    width: 90%;
+    margin-top: 20px;
+    border-spacing: 0;
+}
+
+th{
+    border-bottom: 2px solid rgba(179, 179, 179, 0.5);
+    border-right: 2px solid rgba(179, 179, 179, 0.5);
+    padding-bottom: 5px;
+    width: 30%;
+    background-color: rgb(234, 255, 247);
+}
+
+td{
+    text-align: center;
+    border-bottom: 2px solid rgba(179, 179, 179, 0.5);
+}
+
+
+.headers th:nth-child(4){
+    border-right: 0;
+    padding: 0 15px;
+}
+
+th.button-column{
+    width: 10%;
+}
+
+.initial-text{
+    white-space: nowrap;
+    font-size: 1.05rem;
+    padding: 7px;
+}
+
+tr.grey{
+    background-color: rgba(195, 213, 206, 0.5);
+}
+
+.initial-row > td{
+    border: none;
+    color: gray;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+
+
+/* -- INPUT STYLES-- */
+input{
+    border-radius: 4px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+input:focus{
+    
+    outline: none;
+    outline-offset: 0;
+    border: none;
+    border: 2px solid #a4de89;
+    box-shadow: 0 0 0 1pt #a4de89;;
+}
+#desc-input{
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.lower-inputs{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.lower-inputs input{
+    flex: 1 1 0;
+    max-width: 47%;
+}
+
+/* --BUTTON STYLES-- */
+
+button{
+    display: block;
+    margin: 5px auto;
+    border-radius: 4px;
+    border: 1px solid #a4de89;
+    background-color: #85b370;
+    padding: 4px 6px;
+    transition-timing-function: ease-out;
+    transition: background-color 0.2s, outline 0.1s;
+    transition-delay: 0.005s;
+}
+
+.delete-button{
+    background-color: rgb(255, 81, 121);
+    color: rgb(34, 32, 32);
+    border: 1px solid rgb(255, 101, 137);
+}
+
+.delete-button:active{
+    background-color: rgb(255, 101, 137);
+}
+
+.delete-button:hover{
+    background-color: rgb(255, 151, 175);;
+}
+
+.expense-button:hover{
+    background-color: #d9fdc8;
+}
+.expense-button:active{
+    background-color: #a4de89;
+}
+
+.test{
+    background-color: rgb(210, 96, 210);
+    border: 1px solid rgb(240, 112, 240);
+}
+
+.test:active{
+    background-color: rgb(240, 112, 240);
+}
+
+.test:hover{
+    background-color: rgb(255, 173, 255);
+}
